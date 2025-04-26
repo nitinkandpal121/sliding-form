@@ -1,0 +1,94 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #0b1d36, #081425);
+  padding: 2rem;
+  height: 100vh;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1500px;
+}
+
+.carousel-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 80%;
+  backdrop-filter: blur(10px);
+}
+
+.click-area-left,
+.click-area-right {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.click-area-left {
+  left: 0;
+}
+
+.click-area-right {
+  right: 0;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #aaa;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+.service-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.service-button {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.service-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
