@@ -1,0 +1,74 @@
+/* ServicesSection.css */
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .card {
+    background: #f9f9f9;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-placeholder {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    color: #222;
+    margin: 0;
+  }
+  
+  .bottom-text {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .bottom-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .get-started {
+    background: #0052cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .get-started:hover {
+    background: #003d99;
+  }
+  
+  /* Make Swiper pagination dots center-aligned */
+  .swiper-pagination {
+    margin-top: 20px;
+  }
+  
